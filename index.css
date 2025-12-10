@@ -92,21 +92,3 @@ nav:hover,
     background-color: rgb(60, 60, 60);
     border-color: rgb(60, 60, 60);
 }
-
-nav a,
-.other a {
-    display: block;
-    width: 100%;
-    text-align: center;
-    text-decoration: none;
-    color: white;
-    font-weight: 900;
-    font-family: "Tiktok Sans", sans-serif;
-}
-
-nav ul,
-.other ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
