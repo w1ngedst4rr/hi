@@ -80,3 +80,18 @@ footer {
     border-radius: 4px;
     background-color: rgb(30, 30, 30);
 }
+
+nav a,
+.other a {
+    display: block;
+    padding: 10px 20px;
+    background-color: gray;
+    border-radius: 8px;
+    transition: transform 0.25s ease, background-color 0.25s ease;
+}
+
+nav a:hover,
+.other a:hover {
+    transform: scale(1.1);
+    background-color: rgb(60, 60, 60);
+}
