@@ -21,9 +21,6 @@ body {
     width: 70vw;
     justify-content: center;
     align-items: center;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
 }
 
 nav {
@@ -31,31 +28,13 @@ nav {
     border-radius: 20px;
     background-color: gray;
     align-self: center;
-    width: fit-content;
-    transition: transform 0.25s ease, background-color 0.25s ease;
-    cursor: pointer;
 }
 
-nav:hover {
-    transform: scale(1.05);
-    background-color: rgb(60, 60, 60);
-    border-color: rgb(60, 60, 60);
-}
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav a {
-    display: block;
-    padding: 12px 20px;
+a {
+    font-family: "Tiktok Sans", sans-serif;
+    font-weight: 900;
     text-decoration: none;
     color: white;
-    font-weight: 900;
-    font-family: "Tiktok Sans", sans-serif;
-    text-align: center;
 }
 
 h1, h2, p {
@@ -63,9 +42,29 @@ h1, h2, p {
     justify-self: center;
 }
 
+.other {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: space-evenly;
+}
+
+.other ul {
+    width: 20vw;
+    border: 4px gray solid;
+    background-color: gray;
+    border-radius: 4px;
+}
+
+.other a {
+    text-align: center;
+    text-decoration: none;
+}
+
 #description {
     min-height: 300px;
-    border: 4px solid rgb(30, 30, 30);
+    border: 4px solid;
+    border-color: rgb(30, 30, 30);
     border-radius: 4px;
     background-color: rgb(30, 30, 30);
     color: white;
@@ -74,30 +73,27 @@ h1, h2, p {
     padding: 8px;
 }
 
-.other {
-    display: flex;
-    justify-content: space-evenly;
-    gap: 30px;
+footer {
+    border: 4px solid;
+    border-color: rgb(30, 30, 30);
+    border-radius: 4px;
+    background-color: rgb(30, 30, 30);
 }
 
+nav,
 .other ul {
-    list-style: none;
-    border: 4px solid gray;
-    border-radius: 4px;
-    background-color: gray;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     transition: transform 0.25s ease, background-color 0.25s ease;
     cursor: pointer;
 }
 
+nav:hover,
 .other ul:hover {
     transform: scale(1.05);
     background-color: rgb(60, 60, 60);
     border-color: rgb(60, 60, 60);
 }
 
+nav a,
 .other a {
     display: block;
     width: 100%;
@@ -108,9 +104,9 @@ h1, h2, p {
     font-family: "Tiktok Sans", sans-serif;
 }
 
-footer {
-    border: 4px solid rgb(30, 30, 30);
-    border-radius: 4px;
-    background-color: rgb(30, 30, 30);
-    padding: 8px;
+nav ul,
+.other ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
