@@ -80,10 +80,11 @@ footer {
     background-color: rgb(30, 30, 30);
 }
 
-nav,
+nav ul,
 .other ul {
-    transition: transform 0.25s ease, background-color 0.25s ease;
-    cursor: pointer;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 nav:hover,
