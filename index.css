@@ -87,6 +87,11 @@ nav ul,
     margin: 0;
 }
 
+nav ul li,
+.other ul li {
+    list-style: none;
+}
+
 nav:hover,
 .other ul:hover {
     transform: scale(1.05);
