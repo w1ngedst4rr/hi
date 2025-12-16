@@ -3,13 +3,10 @@ body {
     justify-content: center;
     gap: 20px;
 }
-}
-
 .card-container {
     display: grid;
     gap: 20px;
 }
-
 .card {
     min-width: 105px;
     min-height: 148px;
@@ -17,13 +14,11 @@ body {
     border-radius: 4px;
     flex-grow: 1;
 }
-
 .body-container {
     width: 70vw;
     justify-content: center;
     align-items: center;
 }
-
 .flashcard-container {
     display: flex;
     flex-wrap: wrap;
@@ -37,7 +32,6 @@ body {
     justify-content: center;
     align-items: center;
 }
-
 .flashcard {
     border: 4px solid white;
     background-color: white;
@@ -54,26 +48,22 @@ body {
     max-width: 31%;
     overflow: auto;
 }
-
 .flashcard p {
     color: white;
     font-weight: 900;
     text-align: center;
     font-size: 21px;
 }
-
 #plus {
     max-width: none;
     min-width: 320px;
 }
-
 label {
     font-family: "Tiktok Sans", sans-serif;
     color: white;
     font-weight: 900;
     margin: 0px 25%;
 }
-
 input {
     font-family: "Tiktok Sans", sans-serif;
     font-weight: 700;
@@ -83,7 +73,6 @@ input {
     aspect-ratio: 12/3;
     border-radius: 8px;
 }
-
 button {
     margin: 20px 25% 20px 25%;
     width: 50%;
@@ -96,7 +85,6 @@ button {
     position: relative;
     z-index: 1000;
 }
-
 .create-container {
     width: 30%;
     padding: 8px;
@@ -104,11 +92,9 @@ button {
     border-radius: 8px;
     padding-bottom: 20%;
 }
-
 .flashcard:hover {
     border: 8px white solid;
 }
-
 nav {
     display: flex;
     justify-items: center;
@@ -118,14 +104,12 @@ nav {
     background-color: gray;
     align-self: center;
 }
-
 nav ul {
     display: flex;
     text-align: center;
     justify-content: flex-start;
     list-style-type: none;
 }
-
 a {
     padding: 10px 30px 10px 30px;
     border-radius: 20px;
@@ -135,21 +119,18 @@ a {
     text-decoration: none;
     color: white;
 }
-
-h1, h2, p {
+h1,h2,p {
     font-family: "Tiktok Sans", sans-serif;
     justify-self: center;
     white-space: normal;
     overflow-wrap: break-word;
 }
-
 .other {
     display: flex;
     align-items: center;
     gap: 50px;
     justify-content: space-evenly;
 }
-
 .other ul {
     width: 20vw;
     border: 4px gray solid;
@@ -157,12 +138,10 @@ h1, h2, p {
     border-radius: 4px;
     list-style-type: none;
 }
-
 .other a {
     text-align: center;
     text-decoration: none;
 }
-
 #description {
     min-height: 300px;
     border: 4px solid;
@@ -174,37 +153,31 @@ h1, h2, p {
     text-align: justify;
     padding: 8px;
 }
-
 footer {
     border: 4px solid;
     border-color: rgb(30, 30, 30);
     border-radius: 4px;
     background-color: rgb(30, 30, 30);
 }
-
 nav a,
 .other ul {
     transition: transform 0.25s ease, background-color 0.25s ease;
     cursor: pointer;
 }
-
 nav a:hover,
 .other ul:hover {
     transform: scale(1.05);
     background-color: rgb(60, 60, 60);
     border-color: rgb(60, 60, 60);
 }
-
 .red {
     background-image: url("Assets/Flashcard-BG-Red.png");
 }
-
 .fade-up {
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 1.5s ease, transform 1.5s ease;
 }
-
 .fade-up.show {
     opacity: 1;
     transform: translateY(0);
