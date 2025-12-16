@@ -1,24 +1,7 @@
-html.preload {
-    opacity: 0;
-}
-
-html.loaded {
-    opacity: 1;
-    transition: opacity 1.6s ease;
-}
-
 body {
     display: flex;
     justify-content: center;
     gap: 20px;
-    opacity: 0;
-    animation: pageFadeIn 1.5s ease forwards;
-}
-
-@keyframes pageFadeIn {
-    to {
-        opacity: 1;
-    }
 }
 
 .card-container {
@@ -219,4 +202,15 @@ nav a:hover,
 
 .red {
     background-image: url("Assets/Flashcard-BG-Red.png");
+}
+
+.fade-up {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1.5s ease, transform 1.5s ease;
+}
+
+.fade-up.show {
+    opacity: 1;
+    transform: translateY(0);
 }
