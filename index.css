@@ -23,16 +23,121 @@ body {
     align-items: center;
 }
 
+.flashcard-container {
+    display: flex;
+    flex-wrap: wrap;
+    border: 4px solid;
+    border-color: rgb(30, 30, 30);
+    border-radius: 4px;
+    background-color: rgb(30, 30, 30);
+    gap: 10px;
+
+    margin-top: 20px;
+    justify-items: space-evenly;
+    justify-content: center;
+    align-items: center;
+}
+
+.flashcard {
+    border: 4px solid white;
+    background-color: white;
+    background-image: url("Assets/Flashcard-BG-Blue.png");
+    background-repeat: no-repeat;
+    image-rendering: pixelated;
+    background-size: cover;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    align-content: center;
+
+    border-radius: 4px;
+    aspect-ratio: 4/3;
+    min-width: 31%;
+    max-width: 31%;
+    overflow: auto;
+}
+
+.flashcard p {
+    color: white;
+    font-weight: 900;
+    text-align: center;
+    font-size: 21px;
+}
+
+#plus {
+    max-width: none;
+    min-width: 320px;
+}
+
+label {
+    font-family: "Tiktok Sans", sans-serif;
+    color: white;
+    font-weight: 900;
+    margin: 0px 25%;
+}
+
+input {
+    font-family: "Tiktok Sans", sans-serif;
+    font-weight: 700;
+    border: white 4px solid;
+    margin: 1px 25% 20px 25%;
+    width: 50%;
+    aspect-ratio: 12/3;
+    border-radius: 8px;
+}
+
+button {
+    margin: 20px 25% 20px 25%;
+    width: 50%;
+    border: white 2px solid;
+    border-radius: 4px;
+
+    background-color: #004dc9;
+    font-family: "Tiktok Sans", sans-serif;
+    color: white;
+    font-weight: 900;
+
+    position: relative;
+    z-index: 1000;
+}
+
+.create-container {
+    width: 30%;
+    padding: 8px;
+    background-color: #1b73ff;
+    border-radius: 8px;
+    padding-bottom: 20%;
+}
+
+.hovered {
+    border: 8px solid #e71616;
+}
+
 nav {
+    display: flex;
+    justify-items: center;
+    justify-content: space-evenly;
     border: 4px gray solid;
     border-radius: 20px;
     background-color: gray;
     align-self: center;
 }
 
+nav ul {
+    display: flex;
+    text-align: center;
+    justify-content: flex-start;
+    list-style-type: none;
+}
+
 a {
+    
+    padding: 10px 30px 10px 30px;
+    border-radius: 20px;
     font-family: "Tiktok Sans", sans-serif;
     font-weight: 900;
+    text-align: center;
     text-decoration: none;
     color: white;
 }
@@ -40,6 +145,8 @@ a {
 h1, h2, p {
     font-family: "Tiktok Sans", sans-serif;
     justify-self: center;
+    white-space: normal;
+    overflow-wrap: break-word;
 }
 
 .other {
@@ -54,6 +161,7 @@ h1, h2, p {
     border: 4px gray solid;
     background-color: gray;
     border-radius: 4px;
+    list-style-type: none;
 }
 
 .other a {
@@ -80,21 +188,19 @@ footer {
     background-color: rgb(30, 30, 30);
 }
 
-nav ul,
+nav a,
 .other ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    transition: transform 0.25s ease, background-color 0.25s ease;
+    cursor: pointer;
 }
 
-nav ul li,
-.other ul li {
-    list-style: none;
-}
-
-nav:hover,
+nav a:hover,
 .other ul:hover {
     transform: scale(1.05);
     background-color: rgb(60, 60, 60);
     border-color: rgb(60, 60, 60);
+}
+
+.red {
+    background-image: url("Assets/Flashcard-BG-Red.png");
 }
