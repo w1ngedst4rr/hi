@@ -2,6 +2,14 @@ body {
     display: flex;
     justify-content: center;
     gap: 20px;
+    opacity: 0;
+    animation: pageFadeIn 1.5s ease forwards;
+}
+
+@keyframes pageFadeIn {
+    to {
+        opacity: 1;
+    }
 }
 
 .card-container {
@@ -132,7 +140,6 @@ nav ul {
 }
 
 a {
-    
     padding: 10px 30px 10px 30px;
     border-radius: 20px;
     font-family: "Tiktok Sans", sans-serif;
@@ -203,17 +210,4 @@ nav a:hover,
 
 .red {
     background-image: url("Assets/Flashcard-BG-Red.png");
-}
-
-body {
-    animation: pageFadeIn 1.2s ease forwards;
-}
-
-@keyframes pageFadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
 }
