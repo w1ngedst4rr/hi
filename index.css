@@ -110,8 +110,8 @@ button {
     padding-bottom: 20%;
 }
 
-.hovered {
-    border: 8px solid #e71616;
+.flashcard:hover {
+    border: 8px white solid;
 }
 
 nav {
