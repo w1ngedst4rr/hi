@@ -1,15 +1,14 @@
-            let questionnum = 0
-            let container = document.getElementById('flashcard-container');
-            let qgrouplist = []
-            let agrouplist = []
-            let qgroup = [];
-            let agroup = [];
-            let pastY;
+let questionnum = 0;
 
-            function update() {
-                localStorage.clear;
-            }
+let container = document.getElementById('flashcard-container');
+let qgrouplist = [];
+let agrouplist = [];
+let qgroup = [];
+let agroup = [];
+let pastY;
 
+function update() {
+    localStorage.clear();
 }
 
 window.addEventListener("load", () => {
