@@ -1,3 +1,12 @@
+html.preload {
+    opacity: 0;
+}
+
+html.loaded {
+    opacity: 1;
+    transition: opacity 1.6s ease;
+}
+
 body {
     display: flex;
     justify-content: center;
