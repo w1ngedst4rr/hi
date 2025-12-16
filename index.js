@@ -7,7 +7,7 @@ window.addEventListener("load", () => {
     });
 });
 
-let container = document.getElementById('flashcard-container');
+const container = document.getElementById('flashcard-container');
 if (container) {
 
     const totalQuestions = localStorage.length / 2;
@@ -24,9 +24,7 @@ if (container) {
         card.appendChild(p);
         container.appendChild(card);
 
-        setTimeout(() => {
-            card.classList.add('show');
-        }, i * 150);
+        setTimeout(() => card.classList.add('show'), i * 150);
     }
 
     const submitButton = document.querySelector(".submit");
@@ -35,11 +33,6 @@ if (container) {
         const answerInput = document.getElementById("answer-input");
 
         if (questionInput.value && answerInput.value) {
-            let questionnum = localStorage.length / 2 + 1;
-
-            localStorage.setItem('question' + questionnum, questionInput.value);
-            localStorage.setItem('answer' + questionnum, answerInput.value);
-
             const card = document.createElement('div');
             card.classList.add('flashcard', 'fade-up');
 
@@ -49,9 +42,11 @@ if (container) {
             card.appendChild(p);
             container.appendChild(card);
 
-            setTimeout(() => {
-                card.classList.add('show');
-            }, 50);
+            setTimeout(() => card.classList.add('show'), 50);
+
+            const questionnum = localStorage.length / 2 + 1;
+            localStorage.setItem('question' + questionnum, questionInput.value);
+            localStorage.setItem('answer' + questionnum, answerInput.value);
 
             questionInput.value = "";
             answerInput.value = "";
