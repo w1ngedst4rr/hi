@@ -14,6 +14,12 @@ function CreateFlashcard() {
 
     localStorage.setItem('question' + questionnum, Qv)
     localStorage.setItem('answer' + questionnum, Av)
+
+    window.addEventListener("load", () => {
+    document.documentElement.classList.remove("preload");
+    document.documentElement.classList.add("loaded");
+});
+
     
     // put question and answer in localstorage
 
