@@ -20,4 +20,6 @@ window.addEventListener("load", () => {
     });
 });
 
-
+if (container) {
+    // flashcard creation / display code here
+}
