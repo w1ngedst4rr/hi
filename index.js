@@ -1,13 +1,20 @@
+let questionnum = 0
+let container = document.getElementById('flashcard-container');
+let qgrouplist = []
+let agrouplist = []
+let qgroup = [];
+let agroup = [];
+let pastY;
+
 function update() {
     localStorage.clear();
 }
 
-window.addEventListener("load", () => {
+window.addEventListener("DOMContentLoaded", () => {
     const elements = document.querySelectorAll(".fade-up");
-
-    elements.forEach((el, index) => {
+    elements.forEach((el, i) => {
         setTimeout(() => {
             el.classList.add("show");
-        }, index * 150);
+        }, i * 150);
     });
 });
