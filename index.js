@@ -6,6 +6,10 @@ let qgroup = [];
 let agroup = [];
 let pastY
 
+function update() {
+    localStorage.clear();
+}
+
 window.addEventListener("DOMContentLoaded", () => {
     const elements = document.querySelectorAll(".fade-up");
     elements.forEach((el, i) => {
