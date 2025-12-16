@@ -1,18 +1,15 @@
-let questionnum = 0;
+            let questionnum = 0
+            let container = document.getElementById('flashcard-container');
+            let qgrouplist = []
+            let agrouplist = []
+            let qgroup = [];
+            let agroup = [];
+            let pastY;
 
-function CreateFlashcard(e) {
-    questionnum += 1;
+            function update() {
+                localStorage.clear;
+            }
 
-    const question = document.getElementById("Question");
-    const answer = document.getElementById("Answer");
-
-    e.preventDefault();
-
-    const Qv = question.value;
-    const Av = answer.value;
-
-    localStorage.setItem('question' + questionnum, Qv);
-    localStorage.setItem('answer' + questionnum, Av);
 }
 
 window.addEventListener("load", () => {
