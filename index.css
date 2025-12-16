@@ -2,6 +2,9 @@ body {
     display: flex;
     justify-content: center;
     gap: 20px;
+
+    background-color: rgb(30, 30, 30);
+    color: white;
 }
 
 .card-container {
@@ -31,7 +34,6 @@ body {
     border-radius: 4px;
     background-color: rgb(30, 30, 30);
     gap: 10px;
-
     margin-top: 20px;
     justify-items: space-evenly;
     justify-content: center;
@@ -45,12 +47,9 @@ body {
     background-repeat: no-repeat;
     image-rendering: pixelated;
     background-size: cover;
-
     margin-top: 10px;
     margin-bottom: 10px;
-
     align-content: center;
-
     border-radius: 4px;
     aspect-ratio: 4/3;
     min-width: 31%;
@@ -92,12 +91,10 @@ button {
     width: 50%;
     border: white 2px solid;
     border-radius: 4px;
-
     background-color: #004dc9;
     font-family: "Tiktok Sans", sans-serif;
     color: white;
     font-weight: 900;
-
     position: relative;
     z-index: 1000;
 }
@@ -206,7 +203,7 @@ nav a:hover,
 
 .fade-up {
     opacity: 0;
-    transform: translateY(40px);
+    transform: translateY(20px);
     transition: opacity 1.5s ease, transform 1.5s ease;
 }
 
